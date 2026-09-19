@@ -1,4 +1,4 @@
-:root{--ink:#101817;--warm:#f3f0e8;--lime:#c8f45c;--muted:#b4b8af;--line:rgba(255,255,255,.18)}
+:root{--ink:#101817;--warm:#f3f0e8;--lime:#f28c28;--muted:#b4b8af;--line:rgba(255,255,255,.18)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--warm);color:var(--ink);font-family:Manrope,Arial,sans-serif}
@@ -10,10 +10,9 @@ a{color:inherit;text-decoration:none}
 nav{display:flex;gap:2rem;align-items:center;font-size:.86rem;font-weight:700}
 .nav-contact{border:1px solid rgba(255,255,255,.55);padding:.7rem 1.05rem;border-radius:50px}
 .menu-toggle{display:none}
-.hero{min-height:720px;height:100vh;max-height:900px;background:linear-gradient(90deg,rgba(4,12,16,.76) 0%,rgba(5,12,15,.40) 45%,rgba(5,12,15,.06)),url('taktekkern-hero.png') center/cover;display:flex;align-items:center;padding:130px 11vw 75px;color:#fff;position:relative}
-.hero-content{max-width:745px}
-.eyebrow{font-family:'DM Mono',monospace;font-size:.69rem;letter-spacing:.13em;text-transform:uppercase;margin:0 0 1.45rem;color:var(--lime);font-weight:500}
-.hero h1,.section h2{font-size:clamp(2.8rem,5.5vw,5.45rem);line-height:.98;letter-spacing:-.065em;margin:0;font-weight:700}
+.hero{min-height:720px;height:100vh;max-height:900px;background:linear-gradient(90deg,rgba(4,12,16,.76) 0%,rgba(5,12,15,.40) 45%,rgba(5,12,15,.06)),url('taktekkern-hero.png') center/cover;display:flex;align-items:center;padding:130px 11vw 75px;color:#fff;position:relative}.hero-content{max-width:470px}
+.eyebrow{font-family:'DM Mono',monospace;font-size:.69rem;letter-spacing:.13em;text-transform:uppercase;margin:0 0 1.45rem;color:var(--lime);font-weight:500}.hero h1,.section h2{font-size:clamp(2.8rem,5.5vw,5.45rem);line-height:.98;letter-spacing:-.065em;margin:0;font-weight:700}
+.hero h1{font-size:clamp(2.8rem,4.2vw,4.45rem);max-width:470px}
 .hero h1 i,.section h2 i{font-family:Georgia,serif;font-weight:400}
 .hero-text{max-width:545px;font-size:1.05rem;line-height:1.7;color:#edf0ed;margin:2rem 0}
 .hero-actions,.contact-actions{display:flex;align-items:center;gap:1.7rem}
