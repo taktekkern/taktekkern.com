@@ -1,0 +1,119 @@
+:root{--ink:#101817;--warm:#f3f0e8;--lime:#c8f45c;--muted:#b4b8af;--line:rgba(255,255,255,.18)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--warm);color:var(--ink);font-family:Manrope,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.site-header{height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 5.5vw;position:absolute;top:0;width:100%;z-index:2;color:#fff}
+.brand{font-size:1.22rem;font-weight:800;letter-spacing:-.08em}
+.brand span{color:var(--lime)}
+.brand em{color:var(--lime);font-style:normal}
+nav{display:flex;gap:2rem;align-items:center;font-size:.86rem;font-weight:700}
+.nav-contact{border:1px solid rgba(255,255,255,.55);padding:.7rem 1.05rem;border-radius:50px}
+.menu-toggle{display:none}
+.hero{min-height:720px;height:100vh;max-height:900px;background:linear-gradient(90deg,rgba(4,12,16,.76) 0%,rgba(5,12,15,.40) 45%,rgba(5,12,15,.06)),url('assets/hero-membranarbeid.png') center/cover;display:flex;align-items:center;padding:130px 11vw 75px;color:#fff;position:relative}
+.hero-content{max-width:745px}
+.eyebrow{font-family:'DM Mono',monospace;font-size:.69rem;letter-spacing:.13em;text-transform:uppercase;margin:0 0 1.45rem;color:var(--lime);font-weight:500}
+.hero h1,.section h2{font-size:clamp(2.8rem,5.5vw,5.45rem);line-height:.98;letter-spacing:-.065em;margin:0;font-weight:700}
+.hero h1 i,.section h2 i{font-family:Georgia,serif;font-weight:400}
+.hero-text{max-width:545px;font-size:1.05rem;line-height:1.7;color:#edf0ed;margin:2rem 0}
+.hero-actions,.contact-actions{display:flex;align-items:center;gap:1.7rem}
+.button{padding:1rem 1.35rem;border-radius:3px;font-size:.86rem;font-weight:800;display:inline-flex;gap:1.5rem;align-items:center}
+.button-primary{background:var(--lime);color:#152015}
+.button span{font-size:1.15rem}
+.text-link{font-size:.86rem;font-weight:800}
+.text-link span{margin-left:.5rem;font-size:1.1rem}
+.hero-note{position:absolute;bottom:34px;right:5.5vw;font-family:'DM Mono';font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;display:flex;align-items:center;gap:.65rem}
+.hero-note span{width:34px;height:1px;background:var(--lime)}
+.section{padding:120px 11vw}
+.intro-grid,.about-grid,.documentation{display:grid;grid-template-columns:1.25fr .75fr;gap:8vw}
+.intro h2{font-size:clamp(2.5rem,4.5vw,4.6rem)}
+.intro p:not(.eyebrow),.about p,.doc-content>p{font-size:1rem;line-height:1.8;margin:0 0 1.5rem}
+.dark{border-bottom:1px solid var(--ink);padding-bottom:.35rem}
+.dark-section{background:var(--ink);color:#f7f6f0}
+.services{padding-top:105px}
+.section-heading{display:grid;grid-template-columns:1.2fr .8fr;column-gap:8vw;align-items:end}
+.section-heading .eyebrow{grid-column:1/-1}
+.section-heading h2{font-size:clamp(2.5rem,4.4vw,4.5rem)}
+.section-heading>p:last-child{color:#c6cac4;font-size:1rem;line-height:1.7;max-width:300px;margin:0 0 .3rem}
+.service-list{margin-top:70px;border-top:1px solid var(--line)}
+.service-list article{display:grid;grid-template-columns:70px 1fr 1fr;gap:20px;padding:23px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.service-list span{font-family:'DM Mono';color:var(--lime);font-size:.7rem}
+.service-list h3{margin:0;font-size:1.25rem;letter-spacing:-.04em}
+.service-list p{margin:0;color:#c6cac4;font-size:.9rem;line-height:1.6}
+.projects{background:#d9ddd4}
+.projects .eyebrow{color:#587513}
+.project-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;margin-top:60px}
+.project{background:#fff}
+.project-large{grid-row:span 2}
+.project-image{height:285px;background-size:cover;background-position:center}
+.project-large .project-image{height:590px}
+.one{background:linear-gradient(0deg,rgba(4,12,16,.25),rgba(4,12,16,.05)),url('assets/hero-membranarbeid.png') center/cover}
+.two{background:linear-gradient(135deg,#32454b,#82959a 50%,#cad2cd)}
+.three{background:linear-gradient(145deg,#152126,#506065 52%,#b5c9c2)}
+.project-caption{padding:19px 21px;position:relative}
+.project-caption span{font-family:'DM Mono';font-size:.63rem;color:#668000;letter-spacing:.09em}
+.project-caption h3{margin:6px 0 0;font-size:1.15rem;letter-spacing:-.04em}
+.project-caption b{position:absolute;right:22px;top:29px;font-size:1.35rem}
+.project-note{font-size:.75rem;margin:25px 0 0;color:#59645e}
+.documentation{align-items:start}
+.documentation h2{font-size:clamp(2.4rem,4.2vw,4.3rem)}
+.doc-content{padding-top:50px}
+.doc-content ul{padding:0;margin:2rem 0 0;list-style:none;border-top:1px solid #c6c6bd}
+.doc-content li{padding:14px 0;border-bottom:1px solid #c6c6bd;font-size:.88rem}
+.doc-content li span{color:#698c13;font-weight:800;padding-right:11px}
+.about-grid{align-items:start}
+.about-grid h2{font-size:clamp(2.5rem,4.2vw,4.4rem)}
+.about-grid p{color:#d4d8d1}
+.contact{padding-bottom:130px}
+.contact h2{font-size:clamp(3.1rem,6vw,6rem)}
+.contact-lead{max-width:485px;line-height:1.75;margin:2rem 0}
+.phone-link{font-size:1.4rem;font-weight:800;letter-spacing:-.05em}
+.phone-link small{display:block;font-family:'DM Mono';letter-spacing:.07em;text-transform:uppercase;color:#667268;font-size:.62rem;margin-top:4px}
+.contact-placeholder{font-size:.7rem;color:#788078;margin-top:3rem}
+footer{background:#101817;color:#ecf0e8;padding:34px 5.5vw;display:flex;align-items:center;justify-content:space-between;font-size:.72rem}
+footer .brand{color:#fff}
+footer p{margin:0;color:#aeb5ab}
+@media(max-width:720px){.site-header{padding:0 7vw;height:68px}
+.menu-toggle{display:block;background:none;border:0;color:#fff;font:700 .8rem Manrope}
+.site-header nav{display:none;position:absolute;top:68px;left:0;right:0;background:#101817;padding:22px 7vw;flex-direction:column;align-items:flex-start;gap:16px}
+.site-header nav.open{display:flex}
+.hero{min-height:650px;padding:135px 7vw 70px;background-position:58% center}
+.hero h1{font-size:3.2rem}
+.hero-text{font-size:.95rem}
+.hero-actions{align-items:flex-start;flex-direction:column;gap:1.2rem}
+.hero-note{display:none}
+.section{padding:75px 7vw}
+.intro-grid,.about-grid,.documentation,.section-heading{grid-template-columns:1fr;gap:28px}
+.section-heading .eyebrow{grid-column:auto}
+.section-heading>p:last-child{margin-top:0}
+.services{padding-top:75px}
+.service-list{margin-top:42px}
+.service-list article{grid-template-columns:38px 1fr;gap:10px}
+.service-list p{grid-column:2}
+.project-grid{grid-template-columns:1fr;margin-top:36px}
+.project-large .project-image,.project-image{height:280px}
+.project-large{grid-row:auto}
+.doc-content{padding-top:0}
+.contact{padding-bottom:85px}
+footer{padding:30px 7vw;display:grid;gap:12px}
+.contact-actions{gap:1.5rem;flex-wrap:wrap}
+}
+
+/* Project showcase */
+.project-intro{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid rgba(16,24,23,.25)}
+.project-intro p{max-width:580px;line-height:1.7;margin:0}
+.project-intro span,.project-wide span{font:500 .63rem 'DM Mono';letter-spacing:.1em;color:#5d7218}
+.project-grid{margin-top:55px}
+.project-image{width:100%;object-fit:cover;display:block}
+.project-caption h3{margin-right:35px}
+.project-wide{margin-top:20px;background:#fff;display:grid;grid-template-columns:1.2fr .8fr;align-items:center}
+.project-wide img{width:100%;height:340px;object-fit:cover;display:block}
+.project-wide p{font-size:clamp(1.3rem,2vw,2rem);letter-spacing:-.05em;line-height:1.15;padding:2rem 2.7rem;margin:0}
+.project-wide span{display:block;margin-bottom:1rem}
+@media(max-width:720px){
+  .project-intro{display:block;margin-top:1.7rem}
+  .project-intro span{display:block;margin-top:1.5rem}
+  .project-wide{grid-template-columns:1fr}
+  .project-wide img{height:250px}
+  .project-wide p{padding:1.7rem;font-size:1.45rem}
+}
