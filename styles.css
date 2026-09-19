@@ -10,7 +10,7 @@ a{color:inherit;text-decoration:none}
 nav{display:flex;gap:2rem;align-items:center;font-size:.86rem;font-weight:700}
 .nav-contact{border:1px solid rgba(255,255,255,.55);padding:.7rem 1.05rem;border-radius:50px}
 .menu-toggle{display:none}
-.hero{min-height:720px;height:100vh;max-height:900px;background:linear-gradient(90deg,rgba(4,12,16,.76) 0%,rgba(5,12,15,.40) 45%,rgba(5,12,15,.06)),url('hero-membranarbeid.png') center/cover;display:flex;align-items:center;padding:130px 11vw 75px;color:#fff;position:relative}
+.hero{min-height:720px;height:100vh;max-height:900px;background:linear-gradient(90deg,rgba(4,12,16,.76) 0%,rgba(5,12,15,.40) 45%,rgba(5,12,15,.06)),url('taktekkern-hero.png') center/cover;display:flex;align-items:center;padding:130px 11vw 75px;color:#fff;position:relative}
 .hero-content{max-width:745px}
 .eyebrow{font-family:'DM Mono',monospace;font-size:.69rem;letter-spacing:.13em;text-transform:uppercase;margin:0 0 1.45rem;color:var(--lime);font-weight:500}
 .hero h1,.section h2{font-size:clamp(2.8rem,5.5vw,5.45rem);line-height:.98;letter-spacing:-.065em;margin:0;font-weight:700}
