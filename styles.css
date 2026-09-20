@@ -79,7 +79,7 @@ footer p{margin:0;color:#aeb5ab}
 .hero{min-height:650px;padding:105px 7vw 70px;background-position:40% bottom;background-size:auto 72%;background-repeat:no-repeat;background-color:#101817;align-items:flex-start}
 .hero h1{font-size:2.65rem}
 .hero-text{font-size:.95rem}
-.hero-actions{align-items:center;flex-direction:row;gap:.75rem}.hero .button{padding:.72rem .85rem;font-size:.72rem;gap:.75rem}.hero .text-link{font-size:.72rem;white-space:nowrap}
+.hero-actions{position:absolute;left:7vw;right:7vw;bottom:24px;align-items:center;flex-direction:row;gap:.75rem}.hero .button{padding:.6rem .75rem;font-size:.66rem;gap:.6rem}.hero .text-link{font-size:.66rem;white-space:nowrap}
 .hero-note{display:none}
 .section{padding:75px 7vw}
 .intro-grid,.about-grid,.documentation,.section-heading{grid-template-columns:1fr;gap:28px}
